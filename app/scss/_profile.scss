@@ -1,0 +1,28 @@
+.profile {
+  position: relative;
+  padding-left: 32px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    height: 32px;
+    border-left: 1px solid $gray_5;
+  }
+}
+
+.profile__username {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.profile__avatar {
+  height: 46px;
+  width: 46px;
+  margin-left: 14px;
+  padding: 2px;
+  border-radius: 50%;
+  border: 2px solid $gray_5;
+}

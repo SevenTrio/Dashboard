@@ -1,0 +1,153 @@
+.tasks {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $gray_5;
+  border-radius: 8px;
+}
+
+.tasks__header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  padding: 32px;
+  padding-bottom: 0;
+}
+
+.tasks__headline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.tasks__heading {
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+
+.tasks__view-all {
+  margin-left: auto;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+  letter-spacing: 0.2px;
+  color: $accent;
+  text-decoration: none;
+}
+
+.tasks__period {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  color: $gray_1;
+}
+
+.tasks__create {
+  display: flex;
+  padding: 0 32px;
+  align-items: center;
+  height: 58px;
+  border-bottom: 1px solid $gray_5;
+}
+
+.tasks__create-input {
+  width: 300px;
+  border: none;
+}
+
+.tasks__create-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 24px;
+  margin-left: auto;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: $gray_1;
+  background-color: #F0F1F7;
+  cursor: pointer;
+}
+
+.tasks__list {
+  padding-bottom: 8px;
+}
+
+.tasks__list-item {
+  border-bottom: 1px solid $gray_5;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.tasks__label {
+  display: flex;
+  align-items: center;
+  height: 58px;
+  padding: 0 32px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba($accent, 0.15);
+  }
+}
+
+.tasks__checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.tasks__checkbox:checked+.tasks__category::before {
+  border-color: $accent;
+  background-color: $accent;
+  background-image: url('/img/check.svg');
+}
+
+.tasks__category {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    vertical-align: bottom;
+    width: 20px;
+    height: 20px;
+    border: 2px solid $gray_3;
+    border-radius: 50%;
+    margin-right: 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 75% 75%;
+  }
+}
+
+.tasks__chip {
+  margin-left: auto;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: $gray_1;
+  background-color: #F0F1F7;
+}
+
+.tasks__chip_urgent {
+  color: #fff;
+  background-color: #FEC400;
+}
+
+.tasks__chip_new {
+  color: #fff;
+  background-color: #29CC97;
+}

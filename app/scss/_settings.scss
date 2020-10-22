@@ -1,0 +1,25 @@
+.settings {
+  border-top: 1px solid #DFE0EB;
+}
+
+.settings__link {
+  display: flex;
+  padding: 0 32px;
+  flex: 1 0 auto;
+  height: 56px;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+  text-decoration: none;
+  color: $gray_2;
+  
+  &:hover {
+    background-color: rgba($gray_1, 0.05);
+  }
+}
+
+.settings__text {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}

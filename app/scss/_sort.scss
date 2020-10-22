@@ -1,0 +1,18 @@
+.sort__button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #4B506D;
+  cursor: pointer;
+  
+  &:hover {
+    color: $accent;
+  }
+}
+
+.sort__icon {
+  height: 12px;
+  width: auto;
+  margin-right: 8px;
+}

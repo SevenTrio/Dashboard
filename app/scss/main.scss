@@ -1,3 +1,24 @@
 // only imports here
-
+@import "reset";
+@import "config";
 @import "global";
+
+@import "page/page";
+@import "logo/logo";
+@import "side-bar/side-bar";
+@import "navigation/navigation";
+@import "settings/settings";
+
+@import "content/content";
+@import "overview/overview";
+@import "notifications/notifications";
+@import "search/search";
+@import "profile/profile";
+@import "total-stats/total-stats";
+@import "unresolved-tickets";
+@import "tasks";
+@import "all-tickets";
+@import "sort";
+@import "filter";
+@import "list-header";
+@import "ticket";

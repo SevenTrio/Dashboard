@@ -1,3 +1,13 @@
 *, *::after, *::before {
   box-sizing: border-box;
 }
+
+body {
+	position: relative;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-family: $mulish;
+	font-size: $fontsize;
+	line-height: $lineheight;
+	color: $textcolor;
+}

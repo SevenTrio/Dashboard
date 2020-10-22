@@ -7,9 +7,215 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
     <script defer src="js/scripts.min.js"></script>
 </head>
-<body>
-    Hello world
+<body class="page">
+    <aside class="side-bar">
+        <header class="side-bar__header">
+            <div class="logo side-bar__logo">
+                <a href="/" class="logo__link">
+                    <img src="img/logo.svg" alt="Dashboard" class="logo__img">
+                    <span class="logo__company-name">Dashboard</span>
+                </a>
+            </div>
+        </header>
+        
+        <div class="navigation side-bar__navigation">
+            <nav>
+                <ul class="navigation__list">
+                    <li class="navigation__list-item">
+                        <a href="#" class="navigation__link navigation__link_active">
+                            <img src="img/overview.svg" alt="" class="navigation__icon">
+                            <span class="navigation__text">Overview</span>
+                        </a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="#" class="navigation__link">
+                            <img src="img/tickets.svg" alt="" class="navigation__icon">
+                            <span class="navigation__text">Tickets</span>
+                        </a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="#" class="navigation__link">
+                            <img src="img/contacts.svg" alt="" class="navigation__icon">
+                            <span class="navigation__text">Contacts</span>
+                        </a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="#" class="navigation__link">
+                            <img src="img/agents.svg" alt="" class="navigation__icon">
+                            <span class="navigation__text">Tasks</span>
+                        </a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="#" class="navigation__link">
+                            <img src="img/articles.svg" alt="" class="navigation__icon">
+                            <span class="navigation__text">Articles</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="settings side-bar__settings">
+            <a href="" class="settings__link">
+                <img src="img/settings.svg" alt="" class="settings__icon">
+                <span class="settings__text">Settings</span>
+            </a>
+        </div>
+    </aside>
+
+    <div class="content">
+        <section class="overview">
+            <header class="overview__header">
+                <h1 class="overview__heading">Overview</h1>
+                <div class="search overview__search">
+                    <img src="img/search.svg" alt="" class="search__icon">
+                </div>
+                <div class="notifications overview__notifications">
+                    <img src="img/notifications.svg" alt="" class="notifications__icon">
+                </div>
+                <div class="profile overview__profile">
+                    <span class="profile__username">Jones Ferdinand</span>
+                    <img src="img/man1.svg" alt="" class="profile__avatar">
+                </div>
+            </header>
+            <div class="total-stats overview__total-stats">
+                <div class="total-stats__item">
+                    <p class="total-stats__category">Unresolved</p>
+                    <p class="total-stats__quantity">60</p>
+                </div>
+                <div class="total-stats__item">
+                    <p class="total-stats__category">Overdue</p>
+                    <p class="total-stats__quantity">16</p>
+                </div>
+                <div class="total-stats__item">
+                    <p class="total-stats__category">Open</p>
+                    <p class="total-stats__quantity">43</p>
+                </div>
+                <div class="total-stats__item">
+                    <p class="total-stats__category">On hold</p>
+                    <p class="total-stats__quantity">64</p>
+                </div>
+            </div>
+            <div class="overview__main-content">
+                <section class="unresolved-tickets overview__unresolved-tickets">
+                    <header class="unresolved-tickets__header">
+                        <div class="unresolved-tickets__headline">
+                            <h1 class="unresolved-tickets__heading">Unresolved tickets</h1>
+                            <a href="" class="unresolved-tickets__view-deatails">View details</a>
+                        </div>
+                        <p class="unresolved-tickets__group">Group: <b>Support</b></p>
+                    </header>
+                    <ul class="unresolved-tickets__list">
+                        <li class="unresolved-tickets__list-item">
+                            <p class="unresolved-tickets__category">Waiting on Feature Request</p>
+                            <span class="unresolved-tickets__quantity">4238</span>
+                        </li>
+                        <li class="unresolved-tickets__list-item">
+                            <p class="unresolved-tickets__category">Awaiting Customer Response</p>
+                            <span class="unresolved-tickets__quantity">1005</span>
+                        </li>
+                        <li class="unresolved-tickets__list-item">
+                            <p class="unresolved-tickets__category">Awaiting Developer Fix</p>
+                            <span class="unresolved-tickets__quantity">914</span>
+                        </li>
+                        <li class="unresolved-tickets__list-item">
+                            <p class="unresolved-tickets__category">Pending</p>
+                            <span class="unresolved-tickets__quantity">281</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="tasks overview__tasks">
+                    <header class="tasks__header">
+                        <div class="tasks__headline">
+                            <h1 class="tasks__heading">Tasks</h1>
+                            <a href="" class="tasks__view-all">View all</a>
+                        </div>
+                        <p class="tasks__period">Today</p>
+                    </header>
+                    <div class="tasks__create">
+                        <input type="text" placeholder="Create new task" class="tasks__create-input">
+                        <div class="tasks__create-button">+</div>
+                    </div>
+                    <ul class="tasks__list">
+                        <li class="tasks__list-item">
+                            <label for="finish-ticket-update" class="tasks__label">
+                                <input id="finish-ticket-update" type="checkbox" class="tasks__checkbox">
+                                <p class="tasks__category">Finish ticket update</p>
+                                <span class="tasks__chip tasks__chip_urgent">URGENT</span>
+                            </label>
+                        </li>
+                        <li class="tasks__list-item">
+                            <label for="create-new-ticket-example" class="tasks__label">
+                                <input id="create-new-ticket-example" type="checkbox" class="tasks__checkbox">
+                                <p class="tasks__category">Create new ticket example</p>
+                                <span class="tasks__chip tasks__chip_new">NEW</span>
+                            </label>
+                        </li>
+                        <li class="tasks__list-item">
+                            <label for="update-ticket-report" class="tasks__label">
+                                <input id="update-ticket-report" type="checkbox" class="tasks__checkbox">
+                                <p class="tasks__category">Update ticket report</p>
+                                <span class="tasks__chip">DEFAULT</span>
+                            </label>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <section class="all-tickets">
+            <header class="all-tickets__header">
+                <h1 class="all-tickets__heading">All tickets</h1>
+                <div class="sort all-tickets__sort">
+                    <div class="sort__button">
+                        <img src="img/sort.svg" alt="" class="sort__icon">
+                        <span>Sort</span>
+                    </div>
+                </div>
+
+                <div class="filter all-tickets__filter">
+                    <div class="filter__button">
+                        <img src="img/filter.svg" alt="" class="filter__icon">
+                        <span>Filter</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="list-header all-tickets__list-header">
+                <span class="list-header__ticket-details">Ticket details</span>
+                <span class="list-header__customer">Customer name</span>
+                <span class="list-header__date">Date</span>
+                <span class="list-header__priority">Priority</span>
+            </div>
+
+            <ul class="all-tickets__list">
+                <li class="ticket all-tickets__ticket">
+                    <div class="ticket__ticket-details">
+                        <img src="img/man1.svg" alt="" class="ticket__customer-avatar">
+                        <div class="ticket__details">
+                            <p class="ticket__theme">Contact Email not Linked</p>
+                            <span class="ticket__updated">Updated 1 day ago</span>
+                        </div>   
+                    </div>
+                    <div class="ticket__customer">
+                        <p class="ticket__customer-name">Tom Cruise</p>
+                        <span class="ticket__customer-date">on 24.05.2019</span>
+                    </div>
+                    <div class="ticket__date">
+                        <p class="ticket__MDY">May 26, 2019</p>
+                        <span class="ticket__time">6:30 PM</span>
+                    </div>
+                    <div class="ticket__priority">
+                        <span class="ticket__priority-chip ticket__priority-chip_high">HIGH</span>
+                    </div>
+                    <div class="ticket__menu">
+                        <img src="img/ticket-menu.svg" alt="" class="ticket__menu-icon">
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>

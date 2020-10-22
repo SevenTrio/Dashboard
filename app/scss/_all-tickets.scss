@@ -1,0 +1,33 @@
+.all-tickets {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  border: 1px solid $gray_5;
+  border-radius: 8px;
+}
+
+.all-tickets__header {
+  display: flex;
+  font-display: row;
+  padding: 32px 32px 0 32px;
+}
+
+.all-tickets__heading {
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+
+.all-tickets__sort {
+  margin-left: 32px;
+}
+
+.all-tickets__filter {
+  margin-left: 32px;
+}
+
+.all-tickets__list-header {
+  margin-top: 32px;
+}

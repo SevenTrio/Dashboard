@@ -1,0 +1,112 @@
+.ticket {
+  display: flex;
+  padding: 24px 32px;
+}
+
+.ticket__ticket-details {
+  display: flex;
+  flex: 4 1 350px;
+  margin-right: 40px;
+}
+
+.ticket__customer {
+  display: flex;
+  flex-direction: column;
+  flex: 2 1 150px;
+  margin-right: 40px;
+}
+
+.ticket__date {
+  display: flex;
+  flex-direction: column;
+  flex: 1.5 1 100px;
+  margin-right: 40px;
+}
+
+.ticket__priority {
+  display: flex;
+  flex: 1 1 80px;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.ticket__menu {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.ticket__customer-avatar {
+  height: 44px;
+  width: 44px;
+  margin-right: 24px;
+  border-radius: 50%;
+}
+
+.ticket__theme {
+  margin-bottom: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.ticket__updated {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  color: $gray_3;
+}
+
+.ticket__customer-name {
+  margin-bottom: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.ticket__customer-date {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  color: $gray_3;
+}
+
+.ticket__MDY {
+  margin-bottom: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.ticket__time {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  color: $gray_3;
+}
+
+.ticket__priority-chip {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 5px 12px;
+  border-radius: 100px;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #29CC97;
+}
+
+.ticket__priority-chip_high {
+  background-color: #F12B2C;
+}
+
+.ticket__priority-chip_low {
+  background-color: #FEC400;
+} 

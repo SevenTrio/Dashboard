@@ -1,0 +1,51 @@
+.overview {
+  display: flex;
+  flex-direction: column;
+}
+
+.overview__header {
+  display: flex;
+  align-items: center;
+}
+
+.overview__heading {
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+}
+
+.overview__search {
+  margin-left: 32px;
+}
+
+.overview__notifications {
+  margin-left: 28px;
+}
+
+.overview__profile {
+  margin-left: 28px;
+}
+
+.overview__total-stats {
+  margin-top: 56px;
+}
+
+.overview__main-content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 32px;
+}
+
+.overview__unresolved-tickets {
+  display: flex;
+  flex: 1 0 320px;
+  margin-right: 15px;
+}
+
+.overview__tasks {
+  display: flex;
+  flex: 1 0 320px;
+  margin-left: 15px;
+}
