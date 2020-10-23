@@ -1,6 +1,12 @@
 .ticket {
   display: flex;
   padding: 24px 32px;
+  border-bottom: 1px solid $gray_5;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: rgba($accent, 0.08);
+  }
 }
 
 .ticket__ticket-details {

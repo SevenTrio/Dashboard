@@ -3,18 +3,18 @@
 @import "config";
 @import "global";
 
-@import "page/page";
-@import "logo/logo";
-@import "side-bar/side-bar";
-@import "navigation/navigation";
-@import "settings/settings";
+@import "page";
+@import "logo";
+@import "side-bar";
+@import "navigation";
+@import "settings";
 
-@import "content/content";
-@import "overview/overview";
-@import "notifications/notifications";
-@import "search/search";
-@import "profile/profile";
-@import "total-stats/total-stats";
+@import "content";
+@import "overview";
+@import "notifications";
+@import "search";
+@import "profile";
+@import "total-stats";
 @import "unresolved-tickets";
 @import "tasks";
 @import "all-tickets";

@@ -31,3 +31,58 @@
 .all-tickets__list-header {
   margin-top: 32px;
 }
+
+.all-tickets__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 70px;
+  padding: 0 42px;
+}
+
+.all-tickets__rows-per-page {
+  display: flex;
+}
+
+.all-tickets__rows-per-page-text {
+  margin-right: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  color: $gray_1;
+}
+
+.all-tickets__rows-per-page-button {
+  display: flex;
+  cursor: pointer;
+}
+
+.all-tickets__rows-per-page-value {
+  margin-right: 5px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  color: #4B506D;
+}
+
+.all-tickets__tickets-counter {
+  margin-left: 50px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  color: $gray_1;
+}
+
+.all-tickets__nav-arrows {
+  margin-left: 32px;
+}
+
+.all-tickets__nav-arrow {
+  height: 12px;
+  width: auto;
+  cursor: pointer;
+}
+
+.all-tickets__nav-arrow_prev {
+  margin-right: 30px;
+}
