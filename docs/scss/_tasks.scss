@@ -105,7 +105,7 @@
 .tasks__checkbox:checked+.tasks__category::before {
   border-color: $accent;
   background-color: $accent;
-  background-image: url('/img/check.svg');
+  background-image: url('/dashboard/img/check.svg');
 }
 
 .tasks__category {
