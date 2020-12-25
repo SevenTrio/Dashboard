@@ -14,7 +14,7 @@
     <aside class="side-bar">
         <header class="side-bar__header">
             <div class="logo side-bar__logo">
-                <a href="/" class="logo__link">
+                <a href="" class="logo__link">
                     <img src="img/logo.svg" alt="Dashboard" class="logo__img">
                     <span class="logo__company-name">Dashboard</span>
                 </a>
@@ -58,7 +58,7 @@
             </nav>
         </div>
         <div class="settings side-bar__settings">
-            <a href="" class="settings__link">
+            <a href="#" class="settings__link">
                 <img src="img/settings.svg" alt="" class="settings__icon">
                 <span class="settings__text">Settings</span>
             </a>
@@ -103,7 +103,7 @@
                     <header class="unresolved-tickets__header">
                         <div class="unresolved-tickets__headline">
                             <h1 class="unresolved-tickets__heading">Unresolved tickets</h1>
-                            <a href="" class="unresolved-tickets__view-deatails">View details</a>
+                            <a href="#" class="unresolved-tickets__view-details">View details</a>
                         </div>
                         <p class="unresolved-tickets__group">Group: <b>Support</b></p>
                     </header>
@@ -131,33 +131,35 @@
                     <header class="tasks__header">
                         <div class="tasks__headline">
                             <h1 class="tasks__heading">Tasks</h1>
-                            <a href="" class="tasks__view-all">View all</a>
+                            <a href="#" class="tasks__view-all">View all</a>
                         </div>
                         <p class="tasks__period">Today</p>
                     </header>
                     <div class="tasks__create">
-                        <input type="text" placeholder="Create new task" class="tasks__create-input">
+                        <label>
+                            <input type="text" placeholder="Create new task" class="tasks__create-input">
+                        </label>
                         <div class="tasks__create-button">+</div>
                     </div>
                     <ul class="tasks__list">
                         <li class="tasks__list-item">
                             <label for="finish-ticket-update" class="tasks__label">
                                 <input id="finish-ticket-update" type="checkbox" class="tasks__checkbox">
-                                <p class="tasks__category">Finish ticket update</p>
+                                <span class="tasks__category">Finish ticket update</span>
                                 <span class="tasks__chip tasks__chip_urgent">URGENT</span>
                             </label>
                         </li>
                         <li class="tasks__list-item">
                             <label for="create-new-ticket-example" class="tasks__label">
                                 <input id="create-new-ticket-example" type="checkbox" class="tasks__checkbox">
-                                <p class="tasks__category">Create new ticket example</p>
+                                <span class="tasks__category">Create new ticket example</span>
                                 <span class="tasks__chip tasks__chip_new">NEW</span>
                             </label>
                         </li>
                         <li class="tasks__list-item">
                             <label for="update-ticket-report" class="tasks__label">
                                 <input id="update-ticket-report" type="checkbox" class="tasks__checkbox" checked>
-                                <p class="tasks__category">Update ticket report</p>
+                                <span class="tasks__category">Update ticket report</span>
                                 <span class="tasks__chip">DEFAULT</span>
                             </label>
                         </li>
@@ -381,15 +383,15 @@
                     <div class="all-tickets__rows-per-page-text">Rows per page: </div>
                     <div class="all-tickets__rows-per-page-button">
                         <div class="all-tickets__rows-per-page-value">8</div>
-                        <img src="img/arrow-down.svg" class="all-tickets__rows-per-page-icon">
+                        <img src="img/arrow-down.svg" alt="" class="all-tickets__rows-per-page-icon">
                     </div>
                 </div>
                 <div class="all-tickets__tickets-counter">
                     <span>1-8 of 1240</span>
                 </div>
                 <div class="all-tickets__nav-arrows">
-                    <img src="img/arrow-left.svg" class="all-tickets__nav-arrow all-tickets__nav-arrow_prev">
-                    <img src="img/arrow-right.svg" class="all-tickets__nav-arrow all-tickets__nav-arrow_next">
+                    <img src="img/arrow-left.svg" alt="previous" class="all-tickets__nav-arrow all-tickets__nav-arrow_prev">
+                    <img src="img/arrow-right.svg" alt="next" class="all-tickets__nav-arrow all-tickets__nav-arrow_next">
                 </div>
             </div>
         </section>
